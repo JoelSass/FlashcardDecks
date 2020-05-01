@@ -2,7 +2,7 @@ Definition Verknüpfung
 
 %
 
-Eine Funktion \(* : M \times M \rightarrow M \). 
+Eine Funktion \(* : M \times M \rightarrow M \).
 
 %
 
@@ -47,7 +47,7 @@ Definition Halbgruppe
 
 %
 
-Sei \(M \) eine Menge und \( * : M \times M \) eine Verknüpfung, welche assoziativ ist, 
+Sei \(M \) eine Menge und \( * : M \times M \) eine Verknüpfung, welche assoziativ ist,
 so nennen wir das Paar \( (M,*) \) Halbgruppe
 
 %
@@ -59,15 +59,15 @@ Definition Monoid
 
 %
 
-Sei \( (M,*) \) eine Halbgruppe und \( e \in M \). 
+Sei \( (M,*) \) eine Halbgruppe und \( e \in M \).
 
 a) Wir nenne \( e \) neutrales Element(von M bzgl. *), wenn folgende Aussage
-gilt: 
+gilt:
 \[ \forall a \in M : e * a = a \lor a * e = a \].
 b) Ist \( e \) ein neutrales Element, so nennen wir das Tripel \( (M,*,e) \)
 Monoid.
 
-% 
+%
 
 Mathe, Strukturen
 
@@ -77,9 +77,9 @@ Definition Potenzierung auf Monoiden
 %
 
 Sei \( (M,*,e)  \) ein Monoid. Für \( a \in M , n \in \mathbb{N}
-\) definieren wir 
+\) definieren wir
 \[
-      a^n = 
+      a^n =
       \begin{cases}
             e, & \text{ falls $n = 0$}, \\
             a^{n-1} * a, & \text{ falls $n > 0$}.
@@ -115,7 +115,7 @@ Sei \( (M,*,e) \) ein Monoid.
 \[ \exists v \in M u*v = e = v*u \]
 Das Element \( v \) heißt inverses zu \( u \)
 
-% 
+%
 
 Mathe, Strukturen
 
@@ -146,7 +146,7 @@ Untergruppenkriterium
 
 \[ U \neq \emptyset \lor \forall a,b \in U: a * b^{-1} \in U \]
 
-% 
+%
 
 Mathe, Strukturen
 
@@ -216,11 +216,11 @@ Definition Polynom
 
 Seien \( (R,+,*,0_R) \) ein kommutativer Ring und sein \( X \) eine
 Unbekannte. Seien weiter \( n \in \mathbb{N}, a_0,...,a_n \in R \) und
-definiere den formalen Ausdruck 
+definiere den formalen Ausdruck
 \[ p(X) := a_0 + a_1 X + ... + a_n X^n  \sum_{i=0}^{n} a_i X^i \]
 
 a) Der Ausruck \( p \) heißt Polynom. Die Elemente \( a_0,...,a_n \) heißen
-koefizienten von \( p(X) \) 
+koefizienten von \( p(X) \)
 
 b) Die Menge aller Polynome über \( R \) bezeichnen wir mit \( R[X] \)
 
@@ -311,7 +311,7 @@ Definition K-Vektorraum
 Sei \( (K,+,*,0_k,1_k) \) ein Körper. Sei \( (V, \oplus , 0_V) \) eine
 Abelsche Gruppe und es gebe eine sogenannte Skalarmultiplikation:
 \[ \otimes : K \times V \rightarrow V, (\lambda , v) \mapsto \lambda \otimes v \]
-mit 
+mit
 \[
 \begin{aligned}
       \forall \lambda , \mu \in K , v \in V &: (\lambda + \mu ) \otimes v =
@@ -338,16 +338,15 @@ Seien \( (K,+,*,0_k,1_k) \) ein Körper, \( m,n \in \mathbb{N_{\geq 1}}  \)
 und \[ I = {1,...,m} \times {1,...,n} = {(i,j)|1\leq i \leq m , 1 \leq j
 \leq n } \]
 Einen Vektor \( A \in K^I  \) mit \( A(i,j) = a_{ij} \) für alle \( (i,j)
-\in I \) schreiben wir als 
-\( m \times n ) Matrizen über K 
+\in I \) schreiben wir als \( m \times n \) Matrizen über K
 \[
-(a_{ij})_{1 \leq i \ leq m , 1 \leq j \leq n} = 
+(a_{ij})_{1 \leq i \ leq m , 1 \leq j \leq n} =
 \begin{bmatrix}
       a_{11} & a_{12} & ... & a_{1n}\\
       a_{21} & a_{22} & ... & a_{2n}\\
       \vdots & \vdots & \ddots & \vdots \\
       a_{m1} & a_{m2} & ... & a_{mn}\\
-\end{bmatrix}	
+\end{bmatrix}
 \]
 Wir schreiben auch \( \mathcal{M}_{m,n}(K) := K^I \)
 
@@ -355,4 +354,66 @@ Wir schreiben auch \( \mathcal{M}_{m,n}(K) := K^I \)
 
 Mathe, Vektorraum
 
+---
+Definition Untervektorraum
 
+%
+
+Sei \( (V,+,*)\) ein K-Vektorraum und \( (U \subseteq V) \). Wir nennen \( (U,+,*)\) einen K-Untervektorraum von V ( \( U \leq V\) ), falls
+
+a) \( (U,+,0_v)\) Untergruppe von \( (V,+,0V)\) ist.
+
+b) \( { \lambda * u | \lambda \in K \land u \in U } \subseteq U \) gilt.
+
+c) Die vier Vektorraumrechenregeln in \( U\) gelten.
+
+%
+
+Mathe, Vektorraum
+
+---
+Untervektorraumkriterium
+
+%
+
+Sei \( V\) ein K-Vektorraum. Eine teilmenge \( U \subseteq V\) ist genau dann ein Untervektorraum von \( V\), wenn die beiden folgenden Eigenschaften gelten:
+
+1) \[ U \neq \emptyset \]
+2) \[ \forall v,w \in U , \lambda \in K: v + w \in U \land \lambda v \in U \]
+
+%
+
+Mathe, Vektorraum
+
+---
+Unnärer Schnitt über Menge von Untervektorräumen \( \mathcal{U} \)
+
+%
+Seien \( V \) ein K-Vektorraum und \( \mathcal{U} \) eine Menge von Untervektorräumen von \( V \).
+
+So ist auch
+\[ \bigcap_{U \in \mathcal{U}} U \]
+ein Untervektorraum von \( V\).
+
+%
+Mathe, Vektorraum
+
+---
+Definition Lineare Hülle
+
+%
+
+Der Durchschnitt aller Untervektorräume von \( V\), die \( M\) enthalten, heißt die lineare Hülle von \( M \)
+
+\[
+\begin{aligned}
+      \left < M \right > &:= \left < M \right >_K \\
+      &:= \bigcap \{ U \mid U \leq V \land M \subseteq U\} \\
+      &= \bigcap_{M \subseteq U \leq V} U
+\end{aligned}
+\]
+
+%
+Mathe, Vektorraum
+
+---
