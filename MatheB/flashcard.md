@@ -417,3 +417,111 @@ Der Durchschnitt aller Untervektorräume von \( V\), die \( M\) enthalten, heiß
 Mathe, Vektorraum
 
 ---
+Definition Linearkombination
+
+%
+
+Seien \( V \) ein K-Vektorraum und \( M \subseteq V \)
+
+Seien \( n \in \mathbb{N} , x_1,...,x_n \in M , \lambda_1 ,...,\lambda_n \in K \) Dann heißt:
+\[ \sum_{i=1}^n \lambda_i x_1 \]
+eine Linearkombination von \( x_1,...,x_n \).
+
+%
+
+Mathe, Vektorraum
+
+---
+Definition triviale Linearkombination
+
+%
+
+Die Linearkombination \( \sum_{i=1}^n \lambda_i x_i \) heißt trivial, falls
+\[ \lambda_1 = ... = \lambda_n = 0 \]
+gilt.
+
+%
+
+Mathe, Vektorraum
+
+---
+Definition linearer Spann
+
+%
+
+\[
+\begin{aligned}
+    lin(M) &:= lin_k(M) \\
+    &:= \{ v \in V \mid v \text{ist Linearkombination von Elementen aus M} \}
+\end{aligned}
+\]
+
+%
+
+Mathe, Vektorraum
+
+---
+Definition endliche Erzeugendensystem
+
+%
+
+Seien \( V \) ein K-Vektorraum, \( n \in \mathbb{N} \).
+Ein Tupel \( (a_1,...,a_n) \) mit \( a_1,...,a_n \in V \) heißt Erzeugendensystem von V falls gilt:
+\[ V = \{ \sum_{i=1}^n \lambda_i a_i \mid \lambda_1 ,..., \lambda_n \in K  \} \]
+
+%
+
+Mathe, Vektorraum
+
+---
+Definition Erzeugendensystem
+
+%
+
+Sei \( V \) ein K-Vektorraum und \( I \) eine Menge. Eine Familie \( (a_i)_{i\in I} \in V^I \) heißt Erzeugendensystem von \( V \), falls gilt:
+\[ V = lin(\{ a_i \mid i \in I \}) \]
+
+%
+
+Mathe, Vektorraum
+
+---
+Definition Erzeugendensystem über \( K^(\mathbb{N}) \)
+
+%
+
+\[ d_n := (\delta_{in})_{i \in \mathbb{N} } = (0,...,0,1,0,...) \]
+
+%
+
+Mathe, Vektorraum
+---
+Definition Kroneckersymbol
+
+%
+
+\[
+\delta _{ij} =
+\begin{cases}
+  1, & \text{ falls $i = j$}
+  0, & \text{ falls $i \neq j$}
+\end{cases}
+\]
+
+%
+
+Mathe, Vektorraum
+
+---
+Definition Lineare (Un-)Abhängikeit (Teil 1)
+
+%
+
+Sei V ein k-Vektorraum. Ein Tupel \( (a_1,...,a_n) \) von Vektoren heißt linear unabhängig falls es ein \( i \in \{1,...,n \} \) gibt mit
+\[ \left < a_1 ,..., a_n \right > = \left < a_1,..., a_{i-1},a_{i+1},...,a_n \right > \]
+
+%
+
+Mathe, Vektorraum
+
+---
