@@ -654,3 +654,30 @@ Basis von \(V\) ergänzen.
 Mathe, Vektorraum
 
 ---
+Definition Morphismen
+
+%
+
+Eine funktion \( f : V \rightarrow W \)heißt k_Vektorraum-Morphismus oder K-lineare Abbildung, falls gilt:
+\[ \forall v,w \in V , \lambda \in K : f ( v+w) = f(v) + f(w) \land f(\lambda v) = \lambda f ( v) \]
+
+%
+
+Mathe, Lineare Abbildung
+
+---
+Kategorien von Morphismen
+
+%
+
+- Monomorphismus, wenn f injektiv ist
+- Epimorphismus, wenn f surjektiv ist
+- Isomorphismus, wenn f bijektiv ist
+- Endomorphismus, wenn Ziel = Quelle ist
+- Automorphismus, wenn Ziel = Quelle und f bijektiv ist
+
+%
+
+Mathe, Lineare Abbildung
+
+---
