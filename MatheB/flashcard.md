@@ -525,3 +525,132 @@ Sei V ein k-Vektorraum. Ein Tupel \( (a_1,...,a_n) \) von Vektoren heißt linear
 Mathe, Vektorraum
 
 ---
+Unabhängigkeitscharakterisierung
+
+%
+
+Sei \( V \) ein K-Vektorraum und \( (a_1,...,a,n) \) ein Tupel von Vektoren aus \( V \). So ist \( (a_1,...,a_n) \) unabhängig, wenn
+\[ \forall \lambda_1,...,\lambda_n \in K: \sum_{j=1}^n \lambda_j a_j = 0_V \Rightarrow \lambda_1 = ... = \lamda_n = 0_K \]
+
+%
+
+Mathe, Vektorraum
+
+---
+Abhängigkeitscharakterisierung
+
+%
+
+Sei \( V \) ein K-Vektorraum und \( (a_1,...,a,n) \) ein Tupel von Vektoren aus \( V \). So ist \( (a_1,...,a_n) \) abhängig, wenn
+\[ \exists \lambda_1,...,\lambda_n \in K: \sum_{j=1}^n \lambda_j a_j = 0_V \land ( \exists i \in \{1,...,n \} : \lambda_j \neq 0_K).
+\]
+
+%
+
+Mathe, Vektorraum
+
+---
+Definition Basis
+
+%
+
+Sei \( V \) ein K-Vektorraum. Eine Familie von Vektoren \( (a_i)_{i \in I} \) aus \( V \) heißt basisi von \( V \) falls:
+
+1)
+\( (a_i)_{i \in I} \) ein Erzeugendensystem von V ist
+
+2)
+\( (a_i)_{i \in I} \) linear unabhängig ist.
+
+%
+
+Mathe, Vektorraum
+
+---
+Charakterisierung endlicher Basen
+
+%
+
+Die drei folgenden Aussagen sind Äquivalent:
+
+\[ (b_1,...,b_s) \text{ ist Basis von V} \]
+\[ (b_1,...,b_s) \text{ ist ein minimales Erzeugendensystem von V} \]
+\[ (b_1,...,b_n) \text{ ist ein maximales linear unabhängiges System} \]
+
+%
+
+Mathe, Vektorraum
+
+---
+Definition minimales Erzeugendensystem
+
+%
+
+\( (b_1,...,b_s) \) ist ein minimales Erzeugendensystem von V, wenn gilt :
+
+1) \( (b_1,...,b_s) \) ist ein Erzeugendensystem
+
+2) \( (b_j)_{j \in \{ 1,..,s \}\setminus \{ i \} } \) ist kein Erzeugendensystem.
+
+%
+
+Mathe, Vektorraum
+
+---
+Definition maximales linear unabhängiges System
+
+%
+
+\( (b_1,...,b_s) \) ist ein maximales unabhängiges System in V, wenn gilt :
+
+1) \( (b_1,...,b_s) \) ist linear unabhängig
+
+2) \( (b_1,...,b_s,b_{s+1}) \) ist linear unabhängig  für jedes \( b_{s+1} \in V \)
+
+%
+
+Mathe, Vektorraum
+
+---
+Austauschsatz von Steinitz
+
+%
+
+Seien \( V \) ein endlich erzeugter K-Vektorraum und \( (b_1,...,b_s) \) ein Erzeugendensystem von \( V \). Sei \( r \in \mathbb{N} \) und sei \( (a_1,...,a_r) \) ein linear unabhängiges System in \( V \). Dann gelen:
+
+\[ 1. r \leq s \]
+\[ 2. (a_1,...,a_r) \text{ kann durch } s-r \text{ Vektoren aus } \{b_1,...,b_s \} \text{ zu einem Erzeugendensystem von } V \text{ erweiter werden, genauer: Es gibt } i_1,...,i_{s-r} \in \{ 1,...,s\} \text{ derart, dass } \]
+\[ (a_1,...,a_r,b_1,...,b_{i}_{s-r})\]
+Ein Erzeugendensystem von V ist.
+
+%
+
+Mathe, Vektorraum
+
+---
+Definition Dimension
+
+%
+
+Seien \( V \) ein K-Vektorraum und \( (a_1,..,a_n) \) eine Basis von \( V \). Dann besteht jede Basis von \( V \) aus genaun n Vektoren und wir nennen:
+\[ dim_K V := n\]
+die Dimension von V
+
+%
+
+Mathe, Vektorraum
+
+---
+Basisergänzungssatz
+
+%
+
+Seien \( V \) ein endlich erzeugter K-Vektorraum, \(B \subseteq V\) ein (nicht notwendigerweise endliches) Erzeugendensystem von \(V\).
+Dann lässt sich jedes linear unabhängige System \( (a_1,...,a_m) \) mit passenden Vektoren aus \(B\) zu einer
+Basis von \(V\) ergänzen.
+
+%
+
+Mathe, Vektorraum
+
+---
