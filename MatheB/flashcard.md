@@ -681,3 +681,200 @@ Kategorien von Morphismen
 Mathe, Lineare Abbildung
 
 ---
+Satz 3.1.7: Eigenschaften K-linearer Abbildungen I 
+
+Sei \( f : V \rightarrow W \) eine K-lineare Abbildung zwischen den K-Vektorräumen V und W. Dann gelten:
+
+% 
+
+(a) \( f(0_V = 0_W) \) und \( f(-v) = -f(v) \) für alle \( v \in V \).
+
+(b) \( f(V) \) ist ein Untervektorraum von \( W \).
+
+(c) Ist \( f \) ein Isomorphismus, so ist auch \( f^{-1}: W \rightarrow V \) ein Isomorphismus.
+
+%
+
+Mathe, Kapitel 3.1
+
+---
+
+Satz 3.1.9: Eigenschaften K-linearer Abbildungen II 
+
+Sei \( f: V \rightarrow W \) eine K-lineare Abbildung uwischen den K-Vektorräumen \( V \) und \( W \). Dann gelten:
+
+%
+
+(a) \( \forall U \subseteq V: U \leq V \Rightarrow  f(U) \leq f(V) \);
+
+(b) \( \forall H \subseteq W: H \leq W \Rightarrow f^{-1}(H) \leq V \);
+
+(c) \( \forall M \subseteq V: f(\langle M \rangle) = \langle f(M) \rangle \).
+
+%
+
+Mathe, Kapitel 3.1
+
+---
+
+Definiton und Lemma Kern
+
+%
+
+Sei \( f: V \rightarrow W \) eine K-lineare Abbildung zwischen den K-Vektorräumen V und W. Dann heißt das Urbild des Nullvektors in \( W \)
+
+ker \(f  := f^{-1}(\lbrace 0_W \rbrace) = \lbrace v \in V  | f(v) = 0_W \rbrace \)
+
+der Kern von \( f \). Diese Menge ist ein Untervektorraum von \( V \).
+
+% 
+
+Mathe, Kapitel 3.1
+
+----
+
+Satz 3.1.13: Injektivität und Kern
+
+%
+
+Sei \( f: V \rightarrow W \) eine K-lineare Abbildung zwischen dem K-Vektorräumen \( V \) und \( W \). Dann gilt
+
+\( f injektiv \iff ker f = \lbrace 0_V \rbrace \).
+
+%
+
+Mathe, Kapitel 3.1
+
+---
+
+Satz 3.1.14: Erzeugendensysteme und Basen unter linearen Abbildungen
+
+%
+
+Sei \( f: V \rightarrow W \) eine K-lineare Abbildung zwischen dem K-Vektorräumen \( V \) und \( W\). Weiter seien
+
+\(a_1, ... , a_n \in V \). Dann gelten:
+
+(a) Ist \( f \) einm Monomorphismus (also injektiv) und \( (a_1, ... , a_n) \) linear unabhängig in \( V \), so ist \((f(a_1), ..., f(a_n))\) linear unabhängig in \( W \).
+
+(b) Ist \( f \) ein Epimorphismus (also surjektiv) und \( (a_1, ... , a_n) \) ein Erzeugendensystem von \( V \), so ist \((f(a_1), ..., f(a_n))\) ein Erzeugendensystem in \( W \).
+
+(c) Ist \( f \) ein Isomorphismus und \((a_1, ..., a_n)\) eine Basis von \( V \), so ist \((f(a_1), ..., f(a_n))\) eine Basis von \( W \).
+
+% 
+
+Mathe, Kapitel 3.1
+
+---
+
+Folgerung aus Satz 3.1.14
+
+%
+
+Für isomorphe K-Vektorräume \( V \) und \( W \) gilt: \( dim_K V = dim_K W \).
+
+% 
+
+Mathe, Kapitel 3.1
+
+---
+
+Satz 3.1.16: Isomorphie von \( K^n \)
+
+%
+
+Für alle \( n \in \mathbb{N} \) ist jeder \( n \)-dimensionale K-Vektorraum isomorph zu \( K^n \).
+
+%
+
+Mathe, Kapitel 3.1
+
+---
+
+Satz 3.1.18: Lineare Abbildungen und lineare Gleichungen
+
+%
+
+Sei \( f: V \rightarrow W \) eine lineare Abbildung zwischen den K-Vektorräumen \( V \) und \( W \). Dann gelten:
+
+(a) Die sogenannte homogene Gleichung \( f(x) = 0_W \) hat als Lösungsmenge den Untervektorraum ker \( f \) und ist insbesondere nichtleer.
+
+(b) Sei \( y \in W\). Hat \( f(x) = y \) eine (sogenannnte partikulare) Lösung \( x^* \), so ist die Lösungsmenge von \( f(x = y) \) gegeben durch: \( f^{-1}(\lbrace y \rbrace) = x^* + ker f := \lbrace x^* + x | x \in ker f \rbrace \)
+
+%
+
+Mathe, Kapitel 3.1
+
+---
+Definition Menge aller Homomorphismen
+
+%
+
+Die Menge aller linearen Abbildungen (also Homomorphismen) zwischen zwei K-Vektorräumen \( W\) und \( V \) bezeichnen wir mit \( Hom_K(W, V) \).
+
+%
+
+Mathe, Kapitel 3.2
+
+---
+
+Satz 3.2.2: Homomorphismen und Vektorräume
+
+%
+
+Für K-Vektorräume \( X, W, V \) gilt:
+
+(a) Die Menge \( V^W = \lbrace f | f ist Abbildung von W nach V \rbrace \) ist ein K-Vektorraum bezüglich der punktweisen Addition und Multiplikation mit Skalaren.
+
+(b) Die Menge \( Hom_K(W, V) \) ist ein Untervektorraum des K-Vektorraumes V^W und damit selbst ein K-Vektorraum bezüglich der punktweisen Addition und Multiplikation mit Skalaren.
+
+(c) Für \( g \in Hom_k(X, W) \) und \( f \in Hom_K(W, V) \) ist die Abbildung \( f \circ g: X \rightarrow V \) ebenfalls K-linear, also \( f \circ g \in Hom_K(X, V) \).
+
+(d) Die Kompositionsabbildung 
+
+\( \circ : Hom_K(X, W)  \times Hom_K(W, V) \rightarrow Hom_K(X, V), (g, f) \mapsto f \circ g \) ist bilinear, das beduetet linear in beiden Argumenten. 
+
+Ausformuliert heißt das: Für alle \( g, g' \in Hom_K(X, W)\), alle \( f, f' \in Hom_K(W, V) \) und alle \( \lambda \in K \) gelten: 
+
+\( (f + f') \circ g = f \circ g + f' \circ g \), 	\( f \circ (g + g') = f \circ g + f \circ g' \),   \( (\lambda f) \circ g = \lambda (f \circ g) \) ,   \( f \circ ( \lambda g) = \lambda (f \circ g) \) 
+
+%
+
+Mathe, Kapitel 3.2
+
+---
+
+Definition und Lemma Endomorphismus
+
+%
+
+Für einen K-Vektorraum V schreiben wir 
+
+\( End_K(V) := Hom_K(V, V) \).
+
+Mit \( =: V \rightarrow V, v \mapsto 0_v \) ist \( (End_K(V), +, \circ, 0, id_V) \) ein Ring, der sogenannte Endomorphismenring von V. Die Einheitengruppe von \( (End_K(V), \circ, id_V) \) wird mit \( GL_K(V)\) bezeichnet. Diese Menge enthält genau die Automorphismen von \( V \) nach \( V \).
+
+%
+
+Mathe, Kapitel 3.2
+
+---
+
+Satz 3.2.7: Darstellung linearer Abbildungen mittels Basen
+
+%
+
+Es seien \( W \) ein K-Vektorraum, \( (b_1, ... , b_n) \) eine endliche Basis von \( W \) und \( V \) ein weiterer K-Vektorraum. Dann gibt es zu jedem (beliebigen) Sytsem \( a_1, ... , a_n \) von Vektoren in \(V \) genau eine lineare Abbildung \( f: W \rightarrow V \) mit
+
+\( \forall i \in \lbrace 1,...,n \rbrace : f(b_i) = a_i \).
+
+Für diese Funktion gilt dann automatisch
+
+\( \forall \lambda_{1},...,\lambda_{n} \in K : f (\sum_{i = 1}^{n} \lambda_{i} b_i) \underset{f linear}_{=} \sum_{i = 1}^{n} \lambda_{i} f(b_i) = \sum_{i = 1}^{n} \lambda_{i} a_i\)
+
+%
+
+Mathe, Kapitel 3.2
+
+---
+ 
